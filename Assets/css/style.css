@@ -1,0 +1,268 @@
+:root{
+    --primary: #f3ff25;
+    --secondary: gree;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-size: 10px;
+    line-height: 1.2em;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul, ol{
+    padding: 0;
+    margin: 0;
+}
+.main_main{
+    display: grid;
+    gap: 1px;
+    grid-template-columns: 1fr;
+}
+.main_header{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(20, 1fr);
+    margin: 20px;
+}
+.main_header_sec{
+display: grid;
+align-items: center;
+}
+.logosec{
+    grid-column: 1/4;
+    width: 50px;
+    z-index: 1;
+}
+.logo{
+    height: 30px;
+}
+
+.addresssec{
+    grid-column: 8/17;
+    gap: 5px;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.searchbarsec{
+    grid-column: 17/20;
+    align-items: center;
+    grid-template-columns: 5fr 1fr;
+    gap: 10px;
+}
+.menubarsec{
+    grid-column: 20/21;
+}
+.address_div_item{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 7fr;
+}
+.searchbarsign{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
+}
+.top_login_link{
+    color: black;
+    background-color: var(--primary);
+    border-radius: 5px 0 0 5px;
+    text-align: center;
+    padding: 5px 0;
+    border: 1px solid var(--primary);
+}
+.top_other_btn_link{
+    border: 1px solid var(--primary);
+    border-radius: 0 5px 5px 0;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.landing_page {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 4fr 7fr;
+}
+
+.main_inner_text {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.main_inner_text h1 {
+    font-size: 6em;
+    line-height: 1.2em;
+}
+.main_inner_text p{
+    font-size: 1em;
+    line-height:1em ;
+}
+.main_inner_text button{
+    border: 1px solid white;
+    height: 30px;
+    width: 100px;
+    color: white;
+    background-color: transparent;
+
+}
+
+/* .Our_Recipe{
+    display: grid;
+    gap: 20px;
+    padding: 50px 200px;
+} */
+
+.recipe_section_header{
+    font-size: 2em;
+}
+.recipe_section_item{
+    display: grid;
+    justify-items: center;
+}
+
+.inner_recipe{
+    display: grid;
+    gap: 20px;
+    padding: 50px 120px;
+}
+
+.inner_recipe_images{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(5,1fr);
+}
+.recipe_section_item img{
+    aspect-ratio: 1;
+    width: 100%;
+    border-radius: 50%;
+} 
+.recipe_section_info{
+    display: grid;
+    justify-items: center;
+
+}
+
+.About_us{
+    background-color: white;
+    color: #000;
+    align-items: center;
+}
+
+.about_us_foodimg{
+    position: absolute;
+    
+}
+
+.about_us_foodimg img{
+    width: 100px;
+    margin: 10px;
+    margin-left: -50px;
+    border-radius: 50%;
+}
+
+.About_food, .our_blog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+.about_header_section_others{
+    align-content: center;
+    display: grid;
+    justify-items: center;
+}
+
+.food_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.About_food h2{
+    font-size: 3em;
+    line-height: 1.2em;
+}
+.Best_food{
+    background-color: #000;
+    color: white;
+    height: 500px;
+    width: 500px;
+    margin-left: 100px; 
+    padding: 15px;
+    /* margin-top: 30px; */
+    
+}
+
+.Best_food h3{
+    font-size: 20px;
+    line-height: 3em;
+    gap: 5px;
+}
+
+.Best_food_img{
+    background-color: #f3ff25;
+    height: 450px;
+    width: 500px;
+    margin-left: 10px;
+    margin-top: 100px;
+}
+
+.justany{
+    position: absolute;
+    float: right;
+    margin-top: 70px;
+    z-index: 2%;
+    margin-left: 250px;
+}
+
+.our_blog{
+    margin-top: 8px;
+}
+
+.our_blog h2{
+    font-size: 3em;
+    line-height: 1.2em;
+}
+
+.our_blog_images{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.sharwarma{
+    background-color: bisque;
+    margin-left: 100px; 
+}
+
+.pizza{
+    background-color: gray;
+    margin-left: 10px;
+}
+
+.jollof{
+    background-color: bisque;
+    margin-left: 10px;
+}
+
+.our_blog_btn{
+    position: absolute;
+    background-color: #000;
+    color: white;
+    padding: 5px;
+}
